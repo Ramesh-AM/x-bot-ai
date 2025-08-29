@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ChatWindow from "./components/ChatWindow";
+import PastConversations from "./components/PastConversations";
+import FeedbackList from "./components/FeedbackList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* <nav className="p-4 bg-gray-200 flex gap-4">
+        <Link to="/">Chat with Bot</Link>
+        <Link to="/history">Past Conversations</Link>
+        <Link to="/feedback">All Feedback</Link>
+      </nav> */}
+      <Routes>
+        <Route path="/" element={<ChatWindow />} />
+        <Route path="/history" element={<PastConversations />} />
+        <Route path="/feedback" element={<FeedbackList />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

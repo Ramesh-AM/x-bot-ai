@@ -1,0 +1,87 @@
+body {
+  background-color: #f9f6ff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-custom {
+  background-color: #d9c8ff;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #5a3d9c !important;
+}
+
+.nav-link.active {
+  background-color: #a78bfa;
+  border-radius: 8px;
+  color: white !important;
+}
+
+.chat-container {
+  background-color: #f3e9ff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.message-bubble {
+  border-radius: 20px;
+  padding: 0.75rem 1rem;
+  max-width: 75%;
+}
+
+.message-user {
+  background-color: #a78bfa;
+  color: white;
+}
+
+.message-bot {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.quick-button {
+  background-color: white;
+  border: 1px solid #d1c4e9;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.quick-button:hover {
+  background-color: #ede7f6;
+}
+
+.btn-save {
+  background-color: #a78bfa;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.feedback-modal .modal-content {
+  background-color: #f9f6ff;
+  border-radius: 12px;
+}
+.sidebar {
+  background-color: #f4efff;
+  min-height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .nav-link {
+  font-weight: 600;
+  color: #5a3d9c;
+  border-radius: 8px;
+}
+
+.sidebar .nav-link.active {
+  background-color: #a78bfa;
+  color: white;
+}
+.sidebar a{text-decoration: none;}
